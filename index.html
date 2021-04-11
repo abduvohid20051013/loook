@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="look">
+        <button id="clear">click to clear local Storage</button>
+        <h1 class="mainTitle">Loook Food</h1>
+        <div class="container">
+            <div class="leftPart">
+                <h2 class="icon">L<strong>OOO</strong>K</h2>
+                <ul class="usersList"></ul>
+                <div class="addUsersWrap">
+                    <h3 class="usersAddTitle">Add Users</h3>
+                    <form class="formAddUser">
+                        <label class="labelAddUser">
+                         <input class="inputAddUserName" type="name" placeholder="Enter your name...">
+                         <input class="inputAddUserNumber" type="number" placeholder="Enter your phone number...">
+                         <button  class="addUserButton" type="submit">Add user</button>
+                        </label>
+                    </form>
+                </div>
+            </div>
+
+            <div class="rightPart">
+                <h2 class="headerTitle">Order acceptance</h2>
+                <main class="mainScreen">
+                    <h3 class="mainScreenTitle">Orders</h3>
+                    <ul class="ordersList">
+                    </ul>
+                </main>
+                <div class="addOrderPart">
+                    <h2 class="addOrderTitle">Add orders</h2>
+                    <form class="addOrderForm">
+                        <label class="addOrderLabel">
+                        <div class="selectWrap">
+                          <select id="select">
+                            <option value="0" selected disabled>Choose an order name...</option>  
+                          </select>
+                          <select id="selectUser">
+                            <option value="0" selected disabled>Choose an owner of the order...</option>  
+                          </select>
+                        </div>
+                        <input class="countOrder" type="number" placeholder="Enter count of your order...">
+                        <button class="addOrderButton" type="submit">Add order</button>
+                     </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="js/base.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
